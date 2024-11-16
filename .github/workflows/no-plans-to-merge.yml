@@ -1,8 +1,12 @@
 name: No Plans to Merge
 
+permissions:
+  pull-requests: write
+
 on:
   pull_request:
-    types: [closed]
+    types:
+      - closed
 
 jobs:
   no-plans-to-merge:
