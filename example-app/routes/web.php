@@ -6,11 +6,11 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 // Test comment
-Route::get('/', function        () {
-    return Inertia::render('Welcome',             [
+Route::get('/', function () {
+    return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
-        'laravelVersion'          => Application::VERSION,
+        'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
 });
