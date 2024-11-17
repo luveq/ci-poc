@@ -1,7 +1,6 @@
 name: Laravel Pint
 
 permissions:
-  pull-requests: write
   contents: write
 
 on:
@@ -11,7 +10,6 @@ on:
 
 jobs:
   laravel-pint:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
